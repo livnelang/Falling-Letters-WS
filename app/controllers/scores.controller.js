@@ -22,7 +22,7 @@ exports.insertRecord = function (req,res)  {
         }
         else {
             Scores.find({}).sort({'result': -1
-            }).limit(3)
+            }).limit(4)
                 .exec(function(err, results){
                 if(err) {
                     res.json(err.errors.result.message);
